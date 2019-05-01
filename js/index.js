@@ -43,7 +43,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
-// ## Task 1-3 from top to bottom
+// ## Tasks 1 and 2 from top to bottom
 let newTitle = document.getElementsByTagName("title");
 newTitle[0].textContent = "Great Idea!";
 
@@ -97,3 +97,19 @@ newContactPar[2].textContent = "sales@greatidea.io";
 
 let newFooter = document.querySelectorAll("footer p");
 newFooter[0].textContent = "Copyright Great Idea! 2018";
+
+// ## Task 3 from top to bottom
+const newNavColor = document.querySelectorAll("nav a");
+
+newNavColor.forEach( a => {
+  a.style.color = "green";
+});
+
+const thing1 = document.createElement("thing1");
+const thing2 = document.createElement("thing2");
+thing1.textContent = "thing 1";
+thing2.textContent = "thing 2";
+
+const a = document.querySelector("a");
+a.prepend(thing2);
+a.prepend(thing1);
