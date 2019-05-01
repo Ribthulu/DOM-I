@@ -55,9 +55,9 @@ newNav[3].textContent = "Features";
 newNav[4].textContent = "About";
 newNav[5].textContent = "Contact";
 
-// come back to later - need to find out how to insert break tags
-// let newHeader1 = document.getElementsByTagName("h1");
-// newHeader1[0].textContent = "DOM is Awesome";
+let newHeader1 = document.getElementsByTagName("h1");
+newHeader1[0].setAttribute('style', 'white-space: pre;');
+newHeader1[0].textContent = "DOM \r\n is \r\n Awesome";
 
 let newButtonText = document.getElementsByTagName("button");
 newButtonText[0].textContent = "Get Started";
@@ -90,10 +90,10 @@ let newContactHeader = document.querySelectorAll(".contact h4");
 newContactHeader[0].textContent = "Contact";
 
 let newContactPar = document.querySelectorAll(".contact p");
-// come back to later - need to find out how to insert break tags
-// newContactPar[0].textContent = "123 Way 456 Street<br>Somewhere, USA";
+newContactPar[0].setAttribute('style', 'white-space: pre;');
+newContactPar[0].textContent = "123 Way 456 Street \r\n Somewhere, USA";
 newContactPar[1].textContent = "1 (888) 888-8888";
 newContactPar[2].textContent = "sales@greatidea.io";
 
 let newFooter = document.querySelectorAll("footer p");
-newFooter[0].textContent = "Copyright Great Idea! 2018<";
+newFooter[0].textContent = "Copyright Great Idea! 2018";
